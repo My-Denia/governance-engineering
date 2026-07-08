@@ -1,18 +1,19 @@
 # Evidence only the owner can retrieve
 
-With one exception, every timestamp in [CHRONOLOGY.md](CHRONOLOGY.md) is
-anchored to local artifacts (grade M at best: content-internal dates, dated
-filenames, append-only logs). The exception: the earliest run's deliverable
-has an institution-held submission timestamp (2026-05-24), provided by the
-owner as a portal screenshot on 2026-07-08 — see item 0. The items below
-are the evidence that only the owner can retrieve; each one upgrades
-specific claims to externally-verifiable (grade S). None of them blocks the
-package — they integrate whenever provided.
+With the exceptions noted in items 0-2 (four S-grade anchors, all provided
+by the owner on 2026-07-08: the institution-held submission timestamp of
+2026-05-24, and the platform-held conversation snapshots anchoring
+2026-06-14, 2026-06-15, and the span through 2026-06-18), every timestamp
+in [CHRONOLOGY.md](CHRONOLOGY.md) is anchored to local artifacts (grade M
+at best: content-internal dates, dated filenames, append-only logs). The
+items below are the evidence that only the owner can retrieve; each one
+upgrades specific claims to externally-verifiable (grade S). None of them
+blocks the package — they integrate whenever provided.
 
 ## 0. Archive the submission-portal record (PROVIDED as screenshot; archival pending)
 
-- **Anchors:** the submission event of 2026-05-24 — the chronology's only
-  current S-grade fact — which, chained with the M-grade run linkage,
+- **Anchors:** the submission event of 2026-05-24 — the chronology's first
+  and earliest S-grade fact — which, chained with the M-grade run linkage,
   yields the v1 claim (harness in use no later than 2026-05-24).
 - **Retrieval:** save the portal screenshot (submission 02:42, 2026-05-24;
   feedback 2026-06-24) into the private evidence archive; optionally also
