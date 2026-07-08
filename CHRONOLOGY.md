@@ -14,11 +14,14 @@ for lack of a public timestamped record. The rules it follows:
 3. Evidence grades: **W** = filesystem modification time only (weak, never
    load-bearing alone). **M** = content-internal date, dated filename,
    append-only log line, or run-state timestamp. **S** = externally anchored.
-4. **There are currently no S-grade anchors.** Every claim below rests on
-   local artifacts that are mutually consistent but not externally
-   verifiable. [NEEDS-OWNER.md](NEEDS-OWNER.md) lists exactly what would
-   upgrade them. This is stated plainly rather than papered over, because an
-   overclaimed chronology would destroy the package's purpose.
+4. **One S-grade anchor exists; everything else is local.** The earliest
+   run's deliverable has an institution-held submission timestamp (see the
+   v1 section; the owner holds the portal screenshot, archive pending). All
+   other claims rest on local artifacts that are mutually consistent but
+   not externally verifiable. [NEEDS-OWNER.md](NEEDS-OWNER.md) lists
+   exactly what would upgrade them. This is stated plainly rather than
+   papered over, because an overclaimed chronology would destroy the
+   package's purpose.
 5. Claims that cannot be anchored even at grade M live ONLY in the
    **Owner-attested** section and are never merged into the verified
    timeline.
@@ -54,6 +57,19 @@ for lack of a public timestamped record. The rules it follows:
   2026-05-26 [E: runs/p8/earliest-run state.json, content logic on the
   deadline field, grade M; the files carry mtimes of 2026-05-19, grade W,
   consistent but not load-bearing].
+- The anchor tightens and hardens via the institution's submission portal:
+  the assignment was SUBMITTED at 02:42 on 2026-05-24 (portal-displayed
+  local time), with feedback returned 2026-06-24 — timestamps held by the
+  institution's servers, outside the owner's control [E: submission-portal
+  record, owner-held screenshot dated 2026-07-08, archive pending — grade S
+  for the SUBMISSION EVENT]. The link from that submission to this run is
+  the local state file, which names the submitted deliverable, its final
+  word count, and the same deadline [E: runs/p8/earliest-run state.json
+  deliverables and word_count_final fields, grade M]. Chained claim,
+  grades stated separately: the governed run's deliverable was submitted
+  2026-05-24 (S), and the run that produced it — with the full gate loop —
+  is the one recorded locally (M). The harness was therefore in use no
+  later than 2026-05-24.
 - The same state file shows the FULL gate loop already operating at that
   date: independent-subagents audit mode; a plan audit that returned
   needs-replan in round 1 and pass in round 2; an execution audit that

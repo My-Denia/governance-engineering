@@ -1,11 +1,25 @@
 # Evidence only the owner can retrieve
 
-Every timestamp in [CHRONOLOGY.md](CHRONOLOGY.md) is currently anchored to
-local artifacts (grade M at best: content-internal dates, dated filenames,
-append-only logs). None of it is externally anchored. The items below are the
-evidence that only the owner can retrieve; each one upgrades specific claims
-to externally-verifiable (grade S). None of them blocks the package — they
-integrate whenever provided.
+With one exception, every timestamp in [CHRONOLOGY.md](CHRONOLOGY.md) is
+anchored to local artifacts (grade M at best: content-internal dates, dated
+filenames, append-only logs). The exception: the earliest run's deliverable
+has an institution-held submission timestamp (2026-05-24), provided by the
+owner as a portal screenshot on 2026-07-08 — see item 0. The items below
+are the evidence that only the owner can retrieve; each one upgrades
+specific claims to externally-verifiable (grade S). None of them blocks the
+package — they integrate whenever provided.
+
+## 0. Archive the submission-portal record (PROVIDED as screenshot; archival pending)
+
+- **Anchors:** the v1 anchor (harness in use no later than 2026-05-24) —
+  the chronology's only current S-grade anchor.
+- **Retrieval:** save the portal screenshot (submission 02:42, 2026-05-24;
+  feedback 2026-06-24) into the private evidence archive; optionally also
+  export the submission receipt email if the institution sent one. Do not
+  stage the screenshot — it names the institution and module; the private
+  archive holds it, the chronology cites it.
+- **Where it lands:** already integrated into CHRONOLOGY's v1 section;
+  archival converts "owner-held screenshot" into a durable artifact.
 
 ## 1. Cloud conversation: "Loop engineering", 2026-06-18
 
