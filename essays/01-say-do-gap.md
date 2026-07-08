@@ -74,8 +74,9 @@ The checks were not designed from theory. An archaeology pass over the
 accumulated run archive (recorded at the time as 88 runs) found the
 abandoned execution log to be the single most pervasive defect class — in
 the worst instance, a log asserting that nothing had been deleted sitting
-beside a state file recording tens of gigabytes freed [E: claude/skill
-source-notes, v4 entry, grade M]. Each check maps to an observed divergence
+beside a state file recording tens of gigabytes freed [E: claude/runs/
+harness-audit-v4 plan and findings, corroborated by claude/skill
+source-notes v4 entry, grade M]. Each check maps to an observed divergence
 class from that corpus, and the archive's own history is disclosed with the
 same discipline: the chronology in this package marks which of its
 timestamps would not survive the checks (two v3-era state files carry a

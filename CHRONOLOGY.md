@@ -27,17 +27,21 @@ for lack of a public timestamped record. The rules it follows:
 
 ### Pre-history of the mechanisms
 
-- Independent plan-auditor and execution-auditor agent definitions existed no
-  later than 2026-05-14 [E: claude/agents/plan-auditor.md,
-  execution-auditor.md — file mtimes, grade W]. The three-role separation
-  (planner / independent plan audit / independent execution audit) predates
-  every later version label.
+- Independent plan-auditor and execution-auditor agent definitions carry
+  file times of 2026-05-14 [E: claude/agents/plan-auditor.md,
+  execution-auditor.md — file mtimes, grade W — a W-only anchor, so this
+  entry is indicative rather than load-bearing; it is corroborated in kind
+  (not date) by the dated source-check entry of 2026-05-14 in the skill's
+  provenance notes, E: claude/skill/references/source-notes.md, grade M].
+  The three-role separation (planner / independent plan audit / independent
+  execution audit) predates every later version label.
 - A subagent lifecycle log has been appending since 2026-05-29T05:07:41Z
   [E: codex/logs/subagent.jsonl first line, append-only, grade M] — the
   delegation substrate the later gates govern.
 - A safety-hook cohort (dangerous-command block, credential-write block,
-  secret scan) existed no later than 2026-05-29 [E: claude/hooks/ and
-  codex/hooks/ file mtimes, grade W].
+  secret scan) carries file times of 2026-05-29 [E: claude/hooks/ and
+  codex/hooks/ file mtimes, grade W — W-only, indicative rather than
+  load-bearing; consistent with the M-grade subagent-log start the same day].
 
 ### v1 — the harness in use
 
@@ -89,7 +93,8 @@ for lack of a public timestamped record. The rules it follows:
   a minimal kernel plus a skill router [E: claude/skill/references/
   source-notes.md, dated entry 2026-07-07, grade M].
 - The Codex-side global kernel titled "v3" went live the same night, no later
-  than 2026-07-07T02:44 [E: codex/kernel title + corroborating run
+  than 2026-07-07 [E: codex/kernel title (the clock time on that file is
+  mtime-only, grade W, and is not used) + corroborating run
   codex-global-kernel-v3, runs/p4, state date 2026-07-07, grade M —
   clock-time caveat below].
 - The system's first machine-enforced completion gate (a Stop hook
@@ -130,10 +135,17 @@ for lack of a public timestamped record. The rules it follows:
   - the four-cell checkpoint taxonomy — on-plan / detour (绕行) / grind
     (硬啃) / escalate — optional at routine checkpoints by design
     [E: claude/skill/references/checkpoint-format.md, grade M];
-  - a trajectory miner blind-tested against sealed, preregistered patterns
-    (sealed file content-dated 2026-07-08T18:47; mining reports timestamped
-    17:47:43Z and 17:47:45Z in their filenames) [E: claude/runs/
-    harness-v5-self-improvement/preregistered-patterns.md and mining/, grade M];
+  - a trajectory miner blind-tested against sealed, preregistered patterns.
+    The sealed file's own stamp reads literally "Sealed at: 2026-07-08T18:4x
+    UTC" — a stamp belonging to the BST-mislabel erratum class disclosed in
+    the known-defects section, so its CLOCK TIME is not usable; the mining
+    reports are filename-timestamped 17:47:43Z and 17:47:45Z. The
+    seal-before-mine ordering therefore does NOT rest on these clock stamps;
+    it is corroborated by filesystem order (sealed file mtime 17:36Z precedes
+    the mining reports, grade W) and by the run's own log narrative
+    [E: claude/runs/harness-v5-self-improvement/preregistered-patterns.md,
+    mining/ report filenames, and execution log — date grade M; intra-day
+    ordering grade W, stated as such];
   - a rule-lifecycle ledger with promotion by owner sign-off, probation, and
     retirement — one component (a concurrent-actor probe) entered ON
     PROBATION at birth per the tax-or-tool test [E: claude/skill/ledger/
