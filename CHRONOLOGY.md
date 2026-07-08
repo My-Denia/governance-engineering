@@ -14,14 +14,16 @@ for lack of a public timestamped record. The rules it follows:
 3. Evidence grades: **W** = filesystem modification time only (weak, never
    load-bearing alone). **M** = content-internal date, dated filename,
    append-only log line, or run-state timestamp. **S** = externally anchored.
-4. **One S-grade anchor exists; everything else is local.** The earliest
-   run's deliverable has an institution-held submission timestamp (see the
-   v1 section; the owner holds the portal screenshot, archive pending). All
-   other claims rest on local artifacts that are mutually consistent but
-   not externally verifiable. [NEEDS-OWNER.md](NEEDS-OWNER.md) lists
-   exactly what would upgrade them. This is stated plainly rather than
-   papered over, because an overclaimed chronology would destroy the
-   package's purpose.
+4. **Four S-grade anchors exist; everything else is local.** The earliest
+   run's deliverable has an institution-held submission timestamp, and two
+   platform-held conversation snapshots (with per-message server
+   timestamps, publicly verifiable via share links held in the private
+   archive) anchor the mid-June design record — see the v1 and
+   design-record sections. All other claims rest on local artifacts that
+   are mutually consistent but not externally verifiable.
+   [NEEDS-OWNER.md](NEEDS-OWNER.md) lists what would upgrade them. This is
+   stated plainly rather than papered over, because an overclaimed
+   chronology would destroy the package's purpose.
 5. Claims that cannot be anchored even at grade M live ONLY in the
    **Owner-attested** section and are never merged into the verified
    timeline.
@@ -94,6 +96,37 @@ for lack of a public timestamped record. The rules it follows:
   per-tree tables in the private inventory, grade M/W mixed]. These runs are
   ordinary engineering and academic work — the harness's operating history,
   not demos.
+
+### The mid-June design record (platform-held conversation snapshots)
+
+Two cloud conversations, retrieved via the platform's public snapshot
+records (per-message server timestamps; share links held in the private
+archive pending the owner's identity-disclosure decision):
+
+- No later than 2026-06-14: the owner describes, in a contemporaneous
+  conversation, the goal skill as the automation carrying all of their
+  real work, iteratively hardened through practice including
+  pull-request-level deliverables (paraphrased translation; original in
+  Chinese), and names the multi-agent collaborative-audit idea. The
+  snapshot was SHARED the same evening — 2026-06-14T22:53Z — so its
+  contents are platform-frozen from that moment, weeks before this
+  disclosure package existed [E: platform snapshot record, private
+  archive, grade S for content-as-of-date].
+- No later than 2026-06-15T19:15Z: the skill's exact name —
+  goal-autopilot-harness — appears verbatim in a pasted invocation inside
+  a conversation about long-running autonomous work [E: platform snapshot
+  record, message timestamp, grade S].
+- On 2026-06-15T18:58Z the owner opens a conversation observing that the
+  public term "harness engineering" was being superseded by "loop
+  engineering" — establishing these as PUBLIC terms the owner tracked,
+  not terms coined in that conversation — and at 19:44Z states,
+  contemporaneously, that they built their harness skill when harness
+  engineering first appeared publicly and believed their implementation
+  to be earlier (paraphrased translation) [E: platform snapshot record,
+  message timestamps, grade S for WHEN the statement was made; the
+  statement itself remains testimony about earlier events]. The
+  conversation continues through 2026-06-18 [E: same record, last-message
+  timestamp, grade S].
 
 ### Sibling layer
 
@@ -209,26 +242,35 @@ for lack of a public timestamped record. The rules it follows:
 
 ## Owner-attested (not independently verifiable)
 
-The following claims have NO local anchor at grade M or better. They are the
-owner's testimony, recorded as such. Items 1-3 upgrade if the cloud evidence
-in [NEEDS-OWNER.md](NEEDS-OWNER.md) is retrieved.
+The following claims lack independent anchors. They are the owner's
+testimony, recorded as such. (Two items originally in this section were
+resolved by the platform snapshots of 2026-07-08 and moved or refined —
+noted below for the record.)
 
 1. **Thought origin.** The plan-execute-audit design (gates, auditor
-   separation, run folders) was worked out in design conversations before the
-   first archived run. The earliest verifiable artifact is the first run
-   itself (owner-attested; would upgrade via needs-owner item 2).
-2. **Loop behavior naming.** A conversation dated 2026-06-18 (owner-attested
-   date) named and developed "loop engineering" as the layer above harness
-   engineering. No local file contains that phrase; the conversation is
-   cloud-side (would upgrade via needs-owner item 1).
-3. **The naming lineage.** The convention prompt engineering -> context
-   engineering -> harness engineering -> loop engineering -> this layer is
-   the owner's own naming practice, attested; local artifacts contain the
-   mechanisms but not the two earlier phrases (consistent with, but not
-   proof of, the practice).
-4. **Two prior attribution losses.** That implementations preceded public
-   naming twice before, with attribution lost, is owner testimony about
-   events outside this archive.
+   separation, run folders) was worked out in design conversations before
+   the first archived run. The earliest verifiable artifact remains the
+   first run itself (owner-attested; would upgrade via needs-owner item 2).
+2. **RESOLVED, with correction.** This section previously carried an
+   owner-attested claim that a conversation dated 2026-06-18 "named and
+   developed loop engineering". The platform record (see the mid-June
+   design-record section) shows the conversation STARTED 2026-06-15 and ran
+   through 2026-06-18, and that it discussed "loop engineering" as an
+   already-public term rather than coining it. The platform record
+   supersedes the attested memory; the corrected claim lives in the
+   verified timeline.
+3. **The naming lineage.** The progression prompt engineering -> context
+   engineering -> harness engineering -> loop engineering is the FIELD's
+   public succession of terms, which the owner tracked (the harness->loop
+   transition is now S-anchored to 2026-06-15); that the owner intends this
+   package's layer to be named BEFORE the field names it is the package's
+   stated purpose, not a verifiable past fact.
+4. **Prior attribution losses.** That the owner's implementations preceded
+   the public namings, with attribution lost, is testimony about events
+   outside this archive — but it is no longer only TODAY's testimony: the
+   same claim was made contemporaneously on 2026-06-15 (S-anchored as to
+   when it was said; see the design-record section). What remains
+   unverifiable is the underlying priority itself.
 
 ## Known defects in the record (disclosed, not repaired)
 

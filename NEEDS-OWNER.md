@@ -22,30 +22,34 @@ package — they integrate whenever provided.
 - **Where it lands:** already integrated into CHRONOLOGY's v1 section;
   archival converts "owner-held screenshot" into a durable artifact.
 
-## 1. Cloud conversation: "Loop engineering", 2026-06-18
+## 1. Cloud conversation about loop engineering — PROVIDED 2026-07-08
 
-- **Anchors:** the design-thinking origin of the loop-behavior layer; the
-  naming convention lineage (the practice of naming each engineered layer);
-  the claim that implementation preceded public naming for the second time.
-- **Retrieval:** in the chat platform's web UI, locate the conversation dated
-  2026-06-18 titled (or about) loop engineering. Either create a share link
-  (platform-timestamped) or export the conversation (platform export tools
-  include creation timestamps). A share link is the stronger anchor: its
-  metadata is held by the platform, not the local machine.
-- **Where it lands:** CHRONOLOGY.md "Owner-attested" entries for thought
-  origin and loop behavior move to the verified timeline.
+- **Status:** the owner provided the share link; the platform snapshot
+  record (per-message server timestamps) is archived privately. It showed
+  the conversation started 2026-06-15 (not the attested 2026-06-18 — the
+  platform record corrected the memory, and the chronology says so), ran
+  through 2026-06-18, contains the skill's exact name in a pasted
+  invocation, and contains the contemporaneous priority claim.
+- **Remaining owner decision:** whether the share LINKS appear in the
+  public chronology at publication. Opening a share link displays the
+  owner's platform display name, so staging the links is an
+  identity-disclosure decision — it belongs with the naming/attribution
+  cluster. Until then the links stay in the private archive and the
+  chronology cites the records generically.
 
-## 2. Earlier design-thinking conversations (harness origin, pre-2026-06-02)
+## 2. Earlier design-thinking conversations (harness origin, pre-2026-05-24)
 
-- **Anchors:** "thought origin" — that the plan-execute-audit design predates
-  the first archived run (2026-06-02). Currently the earliest verifiable
-  artifact IS the first run; everything earlier is owner-attested.
-- **Retrieval:** search cloud conversation history from May 2026 (and earlier)
-  for the design discussions that led to the first harness skill: plan/audit
-  gates, run folders, auditor separation. Share-link or export each relevant
-  conversation, noting its platform timestamp.
-- **Where it lands:** replaces the "Owner-attested: design thinking preceded
-  the first archived run" entry with dated, platform-held evidence.
+- **Status: partially provided.** A second share link (conversation of
+  2026-06-14, snapshot shared the same evening) is archived privately: it
+  contains the owner's contemporaneous description of the goal skill as
+  mature and battle-tested, and the multi-agent-audit idea — but it
+  post-dates the earliest run.
+- **Still wanted:** conversations from BEFORE 2026-05-24 (the v1 anchor) in
+  which the plan/audit-gate, run-folder, or auditor-separation design was
+  being worked out. Search the platform's conversation history for May 2026
+  and earlier; share-link or export each relevant one.
+- **Where it lands:** would move the "thought origin" owner-attested entry
+  into the verified timeline.
 
 ## 3. Platform run histories
 
