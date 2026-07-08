@@ -11,8 +11,9 @@ package — they integrate whenever provided.
 
 ## 0. Archive the submission-portal record (PROVIDED as screenshot; archival pending)
 
-- **Anchors:** the v1 anchor (harness in use no later than 2026-05-24) —
-  the chronology's only current S-grade anchor.
+- **Anchors:** the submission event of 2026-05-24 — the chronology's only
+  current S-grade fact — which, chained with the M-grade run linkage,
+  yields the v1 claim (harness in use no later than 2026-05-24).
 - **Retrieval:** save the portal screenshot (submission 02:42, 2026-05-24;
   feedback 2026-06-24) into the private evidence archive; optionally also
   export the submission receipt email if the institution sent one. Do not
