@@ -93,7 +93,7 @@ blocks the package — they integrate whenever provided.
 ## 6. First PUBLIC external timestamp — RESOLVED 2026-07-08
 
 - **Resolved:** the package was published (repository push 23:31Z, release
-  v1.0 23:32Z, Internet Archive snapshots 23:33-23:34Z — see the
+  v1.0 23:32Z, Internet Archive snapshots 23:33Z — see the
   Publication entry in [CHRONOLOGY.md](CHRONOLOGY.md)). The first publicly
   verifiable anchor exists; the package is now the attribution record it
   was built to be.

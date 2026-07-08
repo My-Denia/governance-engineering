@@ -249,16 +249,23 @@ reviewers on request:
 ### Publication (the first PUBLIC anchor)
 
 - This package was published at
-  https://github.com/My-Denia/governance-engineering on 2026-07-08:
-  first push acknowledged 23:31:13Z (GitHub-side pushedAt 23:31:14Z);
-  release v1.0 published 23:32:13Z. Independent third-party snapshots were
-  taken minutes later by the Internet Archive:
-  https://web.archive.org/web/20260708233319/ (repository) and
-  https://web.archive.org/web/20260708233347/ (release page)
-  [E: the repository and release pages themselves, GitHub API pushedAt,
-  and the Internet Archive snapshots — grade S, PUBLICLY verifiable].
-  Everything in this file above this entry predates this anchor and is
-  graded as stated; everything after it inherits public verifiability.
+  https://github.com/My-Denia/governance-engineering on 2026-07-08: first
+  push acknowledged 23:31:13Z (the owner captured GitHub's pushedAt as
+  23:31:14Z at that moment; that API field moves with every later push
+  and is not re-checkable — the STABLE public anchors are the two that
+  follow). Release v1.0 published 23:32:13Z (GitHub API publishedAt,
+  stable and publicly queryable). Independent third-party snapshots were
+  taken by the Internet Archive at 23:33Z:
+  https://web.archive.org/web/20260708233319/https://github.com/My-Denia/governance-engineering
+  (repository) and
+  https://web.archive.org/web/20260708233347/https://github.com/My-Denia/governance-engineering/releases/tag/v1.0
+  (release page)
+  [E: the release's publishedAt and the two Internet Archive snapshot
+  URLs — grade S, PUBLICLY verifiable by anyone, today].
+  Every entry in this file up to this point was written before this
+  anchor existed and carries the grade it states; every change committed
+  after this point in time is itself publicly timestamped by the public
+  repository's history.
 
 ## Owner-attested (not independently verifiable)
 
