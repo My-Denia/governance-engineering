@@ -35,7 +35,7 @@ repository; specs are abstract rewrites, not copies.
 | Runtime hooks (plan gate, stop gate, subagent logging; both tools) | 3 | withhold by default | security-adjacent runtime enforcement; publishing invites cargo-cult reuse without the gate semantics |
 | Test suites (both tools) | 3 | withhold by default | encode implementation specifics |
 | Rules ledger JSON + mining reports + preregistered-patterns file | 2/3 boundary | owner decides | the ledger schema is Tier 2 (spec'd in specs/rule-lifecycle.md); the live contents reveal operational history beyond the chronology's needs |
-| Run archive (92 run folders, 8 project trees) | 3 | withhold; disclose in aggregate only | contains project content, paths, and research material; chronology cites it in aggregate and by framework-run slug only |
+| Run archive (93 run folders, 9 project trees) | 3 | withhold; disclose in aggregate only | contains project content, paths, and research material; chronology cites it in aggregate and by framework-run slug only |
 | Auditor agent definitions | 2/3 boundary | owner decides | short prompts; near-spec but verbatim operational text |
 | Private evidence inventory (real-path citation map, raw agent outputs) | internal | never publish as-is | contains real usernames/paths by design; auditors may view under owner supervision |
 

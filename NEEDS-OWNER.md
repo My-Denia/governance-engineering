@@ -74,32 +74,35 @@ blocks the package — they integrate whenever provided.
   redact costs if preferred.
 - **Where it lands:** corroborating footnote for the overall activity window.
 
-## 5. Cloud-sync version history for the earliest run (potential FIRST strong anchor)
+## 5. Cloud-sync version history for the earliest run (additional corroboration)
 
-- **Anchors:** the earliest verifiable run (the 2026-05-26 v1 anchor in
-  CHRONOLOGY.md) sits in a cloud-synced folder. The sync provider's
-  SERVER-SIDE version history for those three files (plan, handoff, state)
-  is externally held metadata — if it shows the mid-May dates, it becomes
-  the chronology's first S-grade anchor, and it predates everything else.
+- **Anchors:** the earliest verifiable run (the 2026-05-24 v1 anchor, an
+  S+M chain per CHRONOLOGY.md) sits in a cloud-synced folder. The sync
+  provider's SERVER-SIDE version history for those three files (plan,
+  handoff, state) is externally held metadata — if it shows the mid-May
+  dates, it would harden the run-side (currently M-grade) leg of the v1
+  chain and could push the anchor earlier, toward 2026-05-19.
 - **Retrieval:** in the sync provider's web interface, open the folder's
   file version history for each of the three files; screenshot or export
   the version list with its server timestamps. Do not share the documents'
   contents — the timestamps are the payload; the run concerns coursework
   and its content stays private.
-- **Where it lands:** upgrades the v1 anchor from grade M (content logic)
-  to grade S; CHRONOLOGY's grade key gains its first S entry.
+- **Where it lands:** strengthens the v1 chain's M-grade leg; may move the
+  earliest date.
 
-## 6. First external timestamp going forward (owner decision, publish-adjacent)
+## 6. First PUBLIC external timestamp (owner decision, publish-adjacent)
 
-- **Anchors:** everything from the moment it is created. Publishing this
-  package (or even hashing the archive and anchoring the hash via any
-  public timestamping service) creates the first S-grade anchor.
+- **Anchors:** everything from the moment it is created. The four existing
+  S-grade anchors are held by institutions/platforms but are private or
+  access-controlled; publishing this package (or hashing the archive and
+  anchoring the hash via any public timestamping service) creates the
+  first PUBLICLY VERIFIABLE anchor.
 - **Retrieval/action:** owner-only — this is the publish boundary. Options,
   in increasing strength: public repo push; archive hash posted anywhere
   publicly timestamped; both.
-- **Where it lands:** converts the package itself into the attribution record
-  it was built to be. Until this happens, the strongest claim the package can
-  honestly make is "consistent local evidence, not externally verifiable".
+- **Where it lands:** converts the package itself into the attribution
+  record it was built to be, with an anchor anyone can check without
+  asking the owner.
 
 ---
 

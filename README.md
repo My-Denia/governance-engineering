@@ -44,10 +44,11 @@ than a proposal:
 
 The package's value rests entirely on claim credibility, so CHRONOLOGY.md
 holds itself to an uncomfortable standard: every date is "existed no later
-than", every claim carries a graded citation, the current best grade
-(local-only evidence) is admitted upfront, and claims that only the owner
-can attest are quarantined in their own section. NEEDS-OWNER.md lists the
-evidence that would upgrade them.
+than", every claim carries a graded citation, each anchor's grade is
+stated where it is used (four claims carry externally held S-grade
+anchors; everything else is local evidence, and says so), and claims that
+only the owner can attest are quarantined in their own section.
+NEEDS-OWNER.md lists the evidence that would upgrade the rest.
 
 ## Licensing
 

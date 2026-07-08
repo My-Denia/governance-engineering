@@ -10,8 +10,8 @@ for lack of a public timestamped record. The rules it follows:
 1. Every dated claim in the **Verified timeline** is phrased "existed no
    later than DATE" and carries an evidence citation `[E: ...]`.
 2. Citations use pseudo-paths into the owner's local archive (`claude/`,
-   `codex/`, `runs/p1..p7/`); the mapping to real paths is held privately and
-   available to auditors on request. Project trees `p1-p7` are anonymized;
+   `codex/`, `runs/p1..p8/`); the mapping to real paths is held privately and
+   available to auditors on request. Project trees `p1-p8` are anonymized;
    framework-run names are disclosed.
 3. Evidence grades: **W** = filesystem modification time only (weak, never
    load-bearing alone). **M** = content-internal date, dated filename,
@@ -20,10 +20,9 @@ for lack of a public timestamped record. The rules it follows:
    run's deliverable has an institution-held submission timestamp, and two
    platform-held conversation snapshots (with per-message server
    timestamps) anchor the mid-June design record — see the v1 and
-   design-record sections. The snapshot records stay private by owner
-   decision; the platform holds their timestamps independently of the
-   owner, and verification can be granted to designated reviewers on
-   request. All other claims rest on local artifacts that
+   design-record sections. The snapshot records are privately held by
+   owner decision; the platform holds their timestamps independently of
+   the owner, and they are shown to designated reviewers on request. All other claims rest on local artifacts that
    are mutually consistent but not externally verifiable.
    [NEEDS-OWNER.md](NEEDS-OWNER.md) lists what would upgrade them. This is
    stated plainly rather than papered over, because an overclaimed
@@ -104,10 +103,10 @@ for lack of a public timestamped record. The rules it follows:
 ### The mid-June design record (platform-held conversation snapshots)
 
 Two cloud conversations, retrieved via the platform's snapshot records
-(per-message server timestamps). By owner decision the records stay
-private — the owner's remarks in those conversations are not for
+(per-message server timestamps). The records are privately held by owner
+decision — the owner's remarks in those conversations are not for
 publication; the platform retains the authoritative timestamps
-independently of the owner, and verification can be granted to designated
+independently of the owner, and the records are shown to designated
 reviewers on request:
 
 - No later than 2026-06-14: the owner describes, in a contemporaneous
