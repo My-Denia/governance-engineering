@@ -90,19 +90,13 @@ blocks the package — they integrate whenever provided.
 - **Where it lands:** strengthens the v1 chain's M-grade leg; may move the
   earliest date.
 
-## 6. First PUBLIC external timestamp (owner decision, publish-adjacent)
+## 6. First PUBLIC external timestamp — RESOLVED 2026-07-08
 
-- **Anchors:** everything from the moment it is created. The four existing
-  S-grade anchors are held by institutions/platforms but are private or
-  access-controlled; publishing this package (or hashing the archive and
-  anchoring the hash via any public timestamping service) creates the
-  first PUBLICLY VERIFIABLE anchor.
-- **Retrieval/action:** owner-only — this is the publish boundary. Options,
-  in increasing strength: public repo push; archive hash posted anywhere
-  publicly timestamped; both.
-- **Where it lands:** converts the package itself into the attribution
-  record it was built to be, with an anchor anyone can check without
-  asking the owner.
+- **Resolved:** the package was published (repository push 23:31Z, release
+  v1.0 23:32Z, Internet Archive snapshots 23:33-23:34Z — see the
+  Publication entry in [CHRONOLOGY.md](CHRONOLOGY.md)). The first publicly
+  verifiable anchor exists; the package is now the attribution record it
+  was built to be.
 
 ---
 

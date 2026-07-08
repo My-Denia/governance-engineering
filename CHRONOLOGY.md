@@ -246,6 +246,20 @@ reviewers on request:
   through 2026-07-08T19:13:30Z [E: codex/logs/goal_stop_validate.jsonl,
   grade M].
 
+### Publication (the first PUBLIC anchor)
+
+- This package was published at
+  https://github.com/My-Denia/governance-engineering on 2026-07-08:
+  first push acknowledged 23:31:13Z (GitHub-side pushedAt 23:31:14Z);
+  release v1.0 published 23:32:13Z. Independent third-party snapshots were
+  taken minutes later by the Internet Archive:
+  https://web.archive.org/web/20260708233319/ (repository) and
+  https://web.archive.org/web/20260708233347/ (release page)
+  [E: the repository and release pages themselves, GitHub API pushedAt,
+  and the Internet Archive snapshots — grade S, PUBLICLY verifiable].
+  Everything in this file above this entry predates this anchor and is
+  graded as stated; everything after it inherits public verifiability.
+
 ## Owner-attested (not independently verifiable)
 
 The following claims lack independent anchors. They are the owner's
