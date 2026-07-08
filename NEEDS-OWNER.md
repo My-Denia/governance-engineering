@@ -52,7 +52,22 @@ integrate whenever provided.
   redact costs if preferred.
 - **Where it lands:** corroborating footnote for the overall activity window.
 
-## 5. First external timestamp going forward (owner decision, publish-adjacent)
+## 5. Cloud-sync version history for the earliest run (potential FIRST strong anchor)
+
+- **Anchors:** the earliest verifiable run (the 2026-05-26 v1 anchor in
+  CHRONOLOGY.md) sits in a cloud-synced folder. The sync provider's
+  SERVER-SIDE version history for those three files (plan, handoff, state)
+  is externally held metadata — if it shows the mid-May dates, it becomes
+  the chronology's first S-grade anchor, and it predates everything else.
+- **Retrieval:** in the sync provider's web interface, open the folder's
+  file version history for each of the three files; screenshot or export
+  the version list with its server timestamps. Do not share the documents'
+  contents — the timestamps are the payload; the run concerns coursework
+  and its content stays private.
+- **Where it lands:** upgrades the v1 anchor from grade M (content logic)
+  to grade S; CHRONOLOGY's grade key gains its first S entry.
+
+## 6. First external timestamp going forward (owner decision, publish-adjacent)
 
 - **Anchors:** everything from the moment it is created. Publishing this
   package (or even hashing the archive and anchoring the hash via any

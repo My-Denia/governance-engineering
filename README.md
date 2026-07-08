@@ -1,7 +1,7 @@
 # The governance layer (working name — see NAMING.md)
 
 This repository is a disclosure package for an execution-governance system
-for autonomous LLM agents, built and used in private between June and July
+for autonomous LLM agents, built and used in private between May and July
 2026. It documents the design thinking (essays/), the mechanism
 specifications (specs/), and a verifiable development chronology
 (CHRONOLOGY.md). Implementation code is deliberately withheld

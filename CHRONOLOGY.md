@@ -45,17 +45,39 @@ for lack of a public timestamped record. The rules it follows:
 
 ### v1 — the harness in use
 
-- A complete run folder with plan, execution log, handoff, and state — the
-  v1 shape of the harness — was in real project use no later than
+- The EARLIEST verifiable run — disclosed by the owner after the initial
+  sweep, in a ninth tree — is an academic-coursework run (institution,
+  module, and platform names withheld) whose state file, while marked
+  completed, still lists the owner's upload before the submission deadline
+  of 2026-05-26T12:00+01:00 as a REMAINING obligation: the run therefore
+  finished before that deadline. The harness was in use no later than
+  2026-05-26 [E: runs/p8/earliest-run state.json, content logic on the
+  deadline field, grade M; the files carry mtimes of 2026-05-19, grade W,
+  consistent but not load-bearing].
+- The same state file shows the FULL gate loop already operating at that
+  date: independent-subagents audit mode; a plan audit that returned
+  needs-replan in round 1 and pass in round 2; an execution audit that
+  returned needs-fix in round 1 (with named findings, including a
+  wrong-author citation) and pass in round 2; and explicit owner-only
+  boundaries — the state lists the submission upload as an action the
+  harness must not perform, plus a did-not list (paraphrased; the literal
+  strings name the withheld platform)
+  [E: runs/p8/earliest-run state.json audit_trail and
+  owner_only_actions_remaining fields, grade M]. The two-gate,
+  two-round-loop, owner-boundary design is not a later addition — it is
+  present in the earliest run found.
+- Within the ORIGINAL eight-tree sweep, the earliest run is
   2026-06-02T00:33:23Z [E: runs/p1 earliest run, execution-log heading
   corroborated by the slug-embedded timestamp, grade M].
-- The word "harness" for this system appears in a plan file the same day,
+- The word "harness" for this system appears in a plan file on
   2026-06-02 [E: runs/p1 second run, plan.md, grade M].
-- Between 2026-06-02 and 2026-07-08 the archive accumulated 92 run folders
-  across 8 project trees [E: corpus sweep recorded in the run
-  governance-disclosure-20260708; per-tree tables in the private inventory,
-  grade M/W mixed]. These runs are ordinary engineering work — the harness's
-  operating history, not demos.
+- Between 2026-05-26 and 2026-07-08 the archive accumulated 93 run folders
+  across 9 project trees (92 found by the systematic sweep of 8 trees; one
+  more disclosed by the owner immediately after) [E: corpus sweep recorded
+  in the run governance-disclosure-20260708 + post-sweep disclosure,
+  per-tree tables in the private inventory, grade M/W mixed]. These runs are
+  ordinary engineering and academic work — the harness's operating history,
+  not demos.
 
 ### Sibling layer
 
