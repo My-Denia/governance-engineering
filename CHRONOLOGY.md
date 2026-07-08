@@ -1,0 +1,198 @@
+# Chronology
+
+This file is the attribution record for the governance layer (working
+placeholder name — see [NAMING.md](NAMING.md)). It exists because twice
+before, implementation preceded public naming and the attribution was lost
+for lack of a public timestamped record. The rules it follows:
+
+1. Every dated claim in the **Verified timeline** is phrased "existed no
+   later than DATE" and carries an evidence citation `[E: ...]`.
+2. Citations use pseudo-paths into the owner's local archive (`claude/`,
+   `codex/`, `runs/p1..p7/`); the mapping to real paths is held privately and
+   available to auditors on request. Project trees `p1-p7` are anonymized;
+   framework-run names are disclosed.
+3. Evidence grades: **W** = filesystem modification time only (weak, never
+   load-bearing alone). **M** = content-internal date, dated filename,
+   append-only log line, or run-state timestamp. **S** = externally anchored.
+4. **There are currently no S-grade anchors.** Every claim below rests on
+   local artifacts that are mutually consistent but not externally
+   verifiable. [NEEDS-OWNER.md](NEEDS-OWNER.md) lists exactly what would
+   upgrade them. This is stated plainly rather than papered over, because an
+   overclaimed chronology would destroy the package's purpose.
+5. Claims that cannot be anchored even at grade M live ONLY in the
+   **Owner-attested** section and are never merged into the verified
+   timeline.
+
+## Verified timeline (local-evidence grades)
+
+### Pre-history of the mechanisms
+
+- Independent plan-auditor and execution-auditor agent definitions existed no
+  later than 2026-05-14 [E: claude/agents/plan-auditor.md,
+  execution-auditor.md — file mtimes, grade W]. The three-role separation
+  (planner / independent plan audit / independent execution audit) predates
+  every later version label.
+- A subagent lifecycle log has been appending since 2026-05-29T05:07:41Z
+  [E: codex/logs/subagent.jsonl first line, append-only, grade M] — the
+  delegation substrate the later gates govern.
+- A safety-hook cohort (dangerous-command block, credential-write block,
+  secret scan) existed no later than 2026-05-29 [E: claude/hooks/ and
+  codex/hooks/ file mtimes, grade W].
+
+### v1 — the harness in use
+
+- A complete run folder with plan, execution log, handoff, and state — the
+  v1 shape of the harness — was in real project use no later than
+  2026-06-02T00:33:23Z [E: runs/p1 earliest run, execution-log heading
+  corroborated by the slug-embedded timestamp, grade M].
+- The word "harness" for this system appears in a plan file the same day,
+  2026-06-02 [E: runs/p1 second run, plan.md, grade M].
+- Between 2026-06-02 and 2026-07-08 the archive accumulated 92 run folders
+  across 8 project trees [E: corpus sweep recorded in the run
+  governance-disclosure-20260708; per-tree tables in the private inventory,
+  grade M/W mixed]. These runs are ordinary engineering work — the harness's
+  operating history, not demos.
+
+### Sibling layer
+
+- A sibling skill driving the platform's native workflow/goal continuation
+  ("the loop layer" in the owner's naming lineage) was documented and
+  doc-verified no later than 2026-06-04 [E: claude/skill-nwa/SKILL.md,
+  content line "Last verified against docs: 2026-06-04", grade M].
+
+### v2 line (Codex side): delegation and fan-out
+
+- A pre-v2 baseline labeled "current-codex-mech" existed no later than
+  2026-06-14T00:42 [E: codex/backups/old-baks/
+  SKILL.md.bak-current-codex-mech-20260614-004247 — dated filename, grade M].
+- The v2 delegation redesign (delegation modes, read-only sidecar fan-out,
+  model tiers) was cut no later than 2026-07-07T01:08 [E: codex/backups/
+  old-baks, eight files labeled -v2-delegation-20260707-010853, grade M].
+- Three v2 audit-fix hardening passes followed within 42 minutes, at
+  2026-07-07T01:40, 01:45, and 01:50 [E: codex/backups/old-baks, auditfix
+  filename labels, grade M] — the audit-gate loop being applied to the
+  harness itself.
+- The consolidated label "v2.3" for this line appears in the live Codex-side
+  skill [E: codex/skill/SKILL.md, version paragraph, grade M].
+- A v2.3-line run (state schema 4) completed 2026-07-07T03:02-04:08Z
+  [E: runs/p4/goal-autopilot-v2-3-fanout state.json, grade M]; a quota-aware
+  schema-5 run followed at 2026-07-07T04:50Z
+  [E: runs/p4/goal-autopilot-quota-aware-fanout state.json, grade M].
+
+### v3 — the theory-driven operating-layer redesign
+
+- The v3 redesign, codenamed "agent-operating-layer", was cut at
+  2026-07-07T02:10:40 — anchored by TWO independent dated backup filenames,
+  one on each tool's side [E: claude/skill/
+  SKILL.md.bak-agent-operating-layer-v3-20260707-021040 and codex/backups/
+  old-baks same label, grade M]. v3 split a ~25 KB monolithic rule file into
+  a minimal kernel plus a skill router [E: claude/skill/references/
+  source-notes.md, dated entry 2026-07-07, grade M].
+- The Codex-side global kernel titled "v3" went live the same night, no later
+  than 2026-07-07T02:44 [E: codex/kernel title + corroborating run
+  codex-global-kernel-v3, runs/p4, state date 2026-07-07, grade M —
+  clock-time caveat below].
+- The system's first machine-enforced completion gate (a Stop hook
+  validating run state before a session may claim completion) first fired at
+  2026-07-07T02:28:42Z [E: codex/logs/goal_stop_validate.jsonl first line,
+  append-only, grade M]; its "goal-stop-mvp" configuration backup is labeled
+  2026-07-07T03:27 [E: codex hooks.json.bak-goal-stop-mvp-20260707-032755,
+  dated filename, grade M].
+- The Claude-side v3 kernel refactor ran 2026-07-07T02:49-05:12Z
+  [E: claude/runs/refactor-...-v3-kernel state.json, grade M].
+
+### v4 — runtime enforcement
+
+- A ground-up audit ("one-sentence-to-result") ran 2026-07-08T16:09-17:09Z
+  [E: claude/runs/harness-audit-v4 state.json, grade M; backup manifest
+  created 2026-07-08T16:46:59Z, E: claude/backups/
+  harness-audit-v4-20260708-1757/manifest.json, grade M]. Its inputs included
+  an archaeology pass over the run archive (recorded at the time as 88 runs)
+  [E: claude/skill/references/source-notes.md v4 entry, grade M].
+- v4 shipped: a sole sanctioned state mutator (whole-file rewrites documented
+  as the top corruption cause), runtime plan/completion gates as hooks, and a
+  runner-ownership marker so gates act only on runs the harness owns
+  [E: claude/skill/references/source-notes.md v4 entry; hook files carry
+  internal "verified 2026-07-08" dates, grade M].
+
+### v5 — the self-improvement loop
+
+- The v5 run executed 2026-07-08T17:22-18:13Z [E: claude/runs/
+  harness-v5-self-improvement state.json, grade M; backup manifest
+  2026-07-08T17:39:51Z, E: claude/backups/harness-v5-20260708/manifest.json,
+  grade M].
+- v5 shipped, all dated 2026-07-08 [E: claude/skill ledger/rules-ledger.json,
+  every entry "added":"2026-07-08"; claude/skill/references/source-notes.md
+  v5 entry; both grade M]:
+  - say-do reconciliation checks c1-c6 (claimed progress vs artifacts), with
+    severity deliberately capped for c3-c6 [E: claude/skill/references/
+    checkpoint-format.md, grade M];
+  - the four-cell checkpoint taxonomy — on-plan / detour (绕行) / grind
+    (硬啃) / escalate — optional at routine checkpoints by design
+    [E: claude/skill/references/checkpoint-format.md, grade M];
+  - a trajectory miner blind-tested against sealed, preregistered patterns
+    (sealed file content-dated 2026-07-08T18:47; mining reports timestamped
+    17:47:43Z and 17:47:45Z in their filenames) [E: claude/runs/
+    harness-v5-self-improvement/preregistered-patterns.md and mining/, grade M];
+  - a rule-lifecycle ledger with promotion by owner sign-off, probation, and
+    retirement — one component (a concurrent-actor probe) entered ON
+    PROBATION at birth per the tax-or-tool test [E: claude/skill/ledger/
+    rules-ledger.json provenance fields, grade M];
+  - a cross-family critic channel; the v5 run itself records six critic
+    verdicts [E: claude/runs/harness-v5-self-improvement/
+    critic-verdict-1..6.json, grade M].
+- The v5 run's final state is needs-owner-decision — the framework's own
+  completion gate refused a pass the evidence did not support, and the run
+  is parked pending an owner ruling [E: claude/runs/
+  harness-v5-self-improvement/state.json status field, grade M]. This is
+  disclosed deliberately: the record shows the gates binding their author.
+
+### Cross-side port
+
+- The v4 discipline was ported to the second tool's harness the same evening,
+  2026-07-08T18:43-19:15Z [E: claude/runs/codex-harness-v4-port-20260708
+  state.json; codex/backups/codex-harness-v4-20260708/manifest.json created
+  2026-07-08T18:43:32Z; codex/skill/SKILL.md "v4 (2026-07-08)" line; all
+  grade M]. The port's test fixtures appear in the append-only stop-gate log
+  through 2026-07-08T19:13:30Z [E: codex/logs/goal_stop_validate.jsonl,
+  grade M].
+
+## Owner-attested (not independently verifiable)
+
+The following claims have NO local anchor at grade M or better. They are the
+owner's testimony, recorded as such. Items 1-3 upgrade if the cloud evidence
+in [NEEDS-OWNER.md](NEEDS-OWNER.md) is retrieved.
+
+1. **Thought origin.** The plan-execute-audit design (gates, auditor
+   separation, run folders) was worked out in design conversations before the
+   first archived run. The earliest verifiable artifact is the first run
+   itself (owner-attested; would upgrade via needs-owner item 2).
+2. **Loop behavior naming.** A conversation dated 2026-06-18 (owner-attested
+   date) named and developed "loop engineering" as the layer above harness
+   engineering. No local file contains that phrase; the conversation is
+   cloud-side (would upgrade via needs-owner item 1).
+3. **The naming lineage.** The convention prompt engineering -> context
+   engineering -> harness engineering -> loop engineering -> this layer is
+   the owner's own naming practice, attested; local artifacts contain the
+   mechanisms but not the two earlier phrases (consistent with, but not
+   proof of, the practice).
+4. **Two prior attribution losses.** That implementations preceded public
+   naming twice before, with attribution lost, is owner testimony about
+   events outside this archive.
+
+## Known defects in the record (disclosed, not repaired)
+
+- Two v3-era run states carry a mixed timezone defect: created-at stamped
+  +01:00, updated-at stamped Z, so clock-time ordering inverts within the
+  files [E: runs/p4/agent-operating-layer-v3 and codex-global-kernel-v3
+  state.json, grade M for the DATE, unreliable for time-of-day]. The same
+  BST-mislabel class was caught and documented as an erratum during v5. Dates
+  are used; intra-day ordering for these two files is not.
+- A bulk filesystem touch at 2026-07-01T19:21 makes several mtimes in two
+  project trees unreliable [E: corpus sweep caveat, grade M for the caveat
+  itself]. No claim rests on those mtimes.
+- Run-count snapshots differ across time: 88 (v4 archaeology), 91 (v5 miner
+  input), 92 (this package's sweep). Runs were added between counts; all
+  three numbers are reported with their as-of context rather than harmonized
+  [E: claude/skill/references/source-notes.md v4/v5 entries + this run's
+  sweep, grade M].
