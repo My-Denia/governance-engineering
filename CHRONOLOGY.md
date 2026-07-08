@@ -17,9 +17,11 @@ for lack of a public timestamped record. The rules it follows:
 4. **Four S-grade anchors exist; everything else is local.** The earliest
    run's deliverable has an institution-held submission timestamp, and two
    platform-held conversation snapshots (with per-message server
-   timestamps, publicly verifiable via share links held in the private
-   archive) anchor the mid-June design record — see the v1 and
-   design-record sections. All other claims rest on local artifacts that
+   timestamps) anchor the mid-June design record — see the v1 and
+   design-record sections. The snapshot records stay private by owner
+   decision; the platform holds their timestamps independently of the
+   owner, and verification can be granted to designated reviewers on
+   request. All other claims rest on local artifacts that
    are mutually consistent but not externally verifiable.
    [NEEDS-OWNER.md](NEEDS-OWNER.md) lists what would upgrade them. This is
    stated plainly rather than papered over, because an overclaimed
@@ -99,9 +101,12 @@ for lack of a public timestamped record. The rules it follows:
 
 ### The mid-June design record (platform-held conversation snapshots)
 
-Two cloud conversations, retrieved via the platform's public snapshot
-records (per-message server timestamps; share links held in the private
-archive pending the owner's identity-disclosure decision):
+Two cloud conversations, retrieved via the platform's snapshot records
+(per-message server timestamps). By owner decision the records stay
+private — the owner's remarks in those conversations are not for
+publication; the platform retains the authoritative timestamps
+independently of the owner, and verification can be granted to designated
+reviewers on request:
 
 - No later than 2026-06-14: the owner describes, in a contemporaneous
   conversation, the goal skill as the automation carrying all of their

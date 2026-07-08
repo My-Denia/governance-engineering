@@ -31,12 +31,14 @@ blocks the package — they integrate whenever provided.
   platform record corrected the memory, and the chronology says so), ran
   through 2026-06-18, contains the skill's exact name in a pasted
   invocation, and contains the contemporaneous priority claim.
-- **Remaining owner decision:** whether the share LINKS appear in the
-  public chronology at publication. Opening a share link displays the
-  owner's platform display name, so staging the links is an
-  identity-disclosure decision — it belongs with the naming/attribution
-  cluster. Until then the links stay in the private archive and the
-  chronology cites the records generically.
+- **DECIDED (owner ruling, 2026-07-08): the links stay private,
+  permanently** — the owner's remarks in those conversations are not for
+  publication. The chronology cites the records generically; verification
+  can be granted to designated reviewers on request. Operational note: do
+  NOT revoke the platform shares — revocation deletes the platform-side
+  snapshot and with it the third-party verifiability these anchors rest
+  on. The links are unguessable identifiers; unpublished, they are
+  effectively private. Treat the URLs as secrets.
 
 ## 2. Earlier design-thinking conversations (harness origin, pre-2026-05-24)
 
