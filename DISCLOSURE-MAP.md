@@ -12,7 +12,7 @@ repository; specs are abstract rewrites, not copies.
 | README.md | 1 | — | publish | orientation, no sensitive content |
 | CHRONOLOGY.md | 1 | M (self-describing) | publish | the attribution record itself |
 | NEEDS-OWNER.md | 1 | — | publish | shows the evidence discipline openly |
-| NAMING.md | 1 | — | publish | dated collision scan; placeholder discipline |
+| NAMING.md | 1 | — | publish | dated collision scan, preserved unchanged as the record of a deliberate naming choice |
 | DISCLOSURE-MAP.md | 1 | — | publish | this file |
 | essays/01-say-do-gap.md | 1 | M + web citations | publish | design thought, cited |
 | essays/02-when-plans-meet-reality.md | 1 | M + web citations | publish | design thought, cited |
@@ -22,8 +22,8 @@ repository; specs are abstract rewrites, not copies.
 | specs/say-do-checks.md | 2 | M | publish | c1-c6 semantics, no code |
 | specs/four-cell-taxonomy.md | 2 | M | publish | taxonomy definition |
 | specs/rule-lifecycle.md | 2 | M | publish | ledger/probation/retirement semantics |
-| LICENSE (AGPL-3.0, placeholder copyright) | — | — | publish after owner confirms license + attribution | license text is owner-pending |
-| docs/LICENSE-prose.md (CC BY-SA 4.0 note) | — | — | publish after owner confirms | ditto |
+| LICENSE (canonical AGPL-3.0 text) | — | — | publish | license ruled by owner; copyright line confirmed at the authorship gate |
+| docs/LICENSE-DOCS.md (CC BY-SA 4.0 notice) | — | — | publish | prose license ruled by owner |
 | docs/zh-CN-summary.md | 1 | — | publish | translation-only companion |
 
 ## Held privately (owner's local archive; NOT in this repository)

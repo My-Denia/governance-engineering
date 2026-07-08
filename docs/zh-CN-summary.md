@@ -5,8 +5,13 @@
 
 ## README 摘要
 
-本仓库是一套自主 LLM agent 执行治理系统的披露包,系统于 2026 年 5-7 月间
-私下构建并实际使用。包内包含设计思想(essays/)、机制规格(specs/)与可核
+Harness engineering 装备一次运行;loop engineering 驱动多次运行;
+**governance engineering**(治理工程)让这些循环保持诚实:状态权威、言行
+对账、规则生命周期。
+
+本仓库是 governance engineering 作为已建成系统的披露包——一套自主 LLM
+agent 的执行治理层,于 2026 年 5-7 月间私下构建并实际使用。名称与许可证
+(AGPL-3.0 代码 / CC BY-SA 4.0 文档)为已定 owner 裁决。包内包含设计思想(essays/)、机制规格(specs/)与可核
 验的开发年表(CHRONOLOGY.md);实现代码有意不公开(分级见
 DISCLOSURE-MAP.md)。
 

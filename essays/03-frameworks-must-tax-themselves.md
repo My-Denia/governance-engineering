@@ -33,8 +33,8 @@ retrieval, with no retirement path at all (Voyager, arXiv:2305.16291, May
 ## The reasoning
 
 The insight that turned this from housekeeping into governance is that
-bloat is not a style failure — it is the same failure the rest of the
-governance layer exists to prevent, pointed inward. A framework that audits
+bloat is not a style failure — it is the same failure the rest of
+governance engineering exists to prevent, pointed inward. A framework that audits
 its agent's claims but never audits its own rules' usefulness is exactly an
 agent that never validates its own progress: it accumulates unverified
 assertions ("this rule helps") indefinitely. The owner's formulation,

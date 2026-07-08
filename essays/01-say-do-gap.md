@@ -47,7 +47,7 @@ they are wrong.
 
 ## The mechanism
 
-In the governance layer this is six deterministic checks (c1-c6) run by a
+In governance engineering this is six deterministic checks (c1-c6) run by a
 validator over every run folder, reconciling the state file (what the run
 says) against the log, the handoff, and hook-written witness lines (what
 the run shows). Checkpoint timestamps must be monotonic; a terminal status

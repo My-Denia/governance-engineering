@@ -49,7 +49,7 @@ escalate boundary and almost nowhere else.
 
 ## The mechanism
 
-In the governance layer, every checkpoint may carry a cell: on-plan
+In governance engineering, every checkpoint may carry a cell: on-plan
 (按计划), detour (绕行), grind (硬啃), or escalate (上报) — defined and
 in operation no later than 2026-07-08 [E: claude/skill checkpoint-format
 document and rules ledger, grade M; the taxonomy and its Chinese terms are

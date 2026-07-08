@@ -1,7 +1,9 @@
 # Chronology
 
-This file is the attribution record for the governance layer (working
-placeholder name — see [NAMING.md](NAMING.md)). It exists because twice
+This file is the attribution record for governance engineering (the name
+was chosen by the owner after the collision-check dossier in
+[NAMING.md](NAMING.md), which is preserved unchanged as the record of a
+deliberate choice). It exists because twice
 before, implementation preceded public naming and the attribution was lost
 for lack of a public timestamped record. The rules it follows:
 

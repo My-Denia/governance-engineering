@@ -1,8 +1,12 @@
-# The governance layer (working name — see NAMING.md)
+# Governance engineering
 
-This repository is a disclosure package for an execution-governance system
-for autonomous LLM agents, built and used in private between May and July
-2026. It documents the design thinking (essays/), the mechanism
+Harness engineering equips a run; loop engineering drives runs; governance
+engineering is what keeps the loops honest: state authority, say/do
+reconciliation, and rule lifecycle.
+
+This repository is a disclosure package for governance engineering as a
+built system — an execution-governance layer for autonomous LLM agents,
+built and used in private between May and July 2026. It documents the design thinking (essays/), the mechanism
 specifications (specs/), and a verifiable development chronology
 (CHRONOLOGY.md). Implementation code is deliberately withheld
 (DISCLOSURE-MAP.md explains the tiering).
@@ -45,9 +49,16 @@ than", every claim carries a graded citation, the current best grade
 can attest are quarantined in their own section. NEEDS-OWNER.md lists the
 evidence that would upgrade them.
 
+## Licensing
+
+Prose (essays, chronology, specs, this README): CC BY-SA 4.0 — see
+[docs/LICENSE-DOCS.md](docs/LICENSE-DOCS.md). Code and skill files (none
+staged at initial publication; implementation is withheld per
+[DISCLOSURE-MAP.md](DISCLOSURE-MAP.md)): AGPL-3.0-or-later — see
+[LICENSE](LICENSE).
+
 ## Status
 
-Prepared for publication; NOT yet published. Publication, final name,
-license confirmation, and any release of withheld implementation are owner
-decisions. Contributions are not being accepted until after first
-publication.
+The name (governance engineering) and licenses are settled owner rulings;
+any release of withheld implementation remains a per-item owner decision.
+Contributions are not being accepted until after first publication.
