@@ -10,8 +10,8 @@ for lack of a public timestamped record. The rules it follows:
 1. Every dated claim in the **Verified timeline** is phrased "existed no
    later than DATE" and carries an evidence citation `[E: ...]`.
 2. Citations use pseudo-paths into the owner's local archive (`claude/`,
-   `codex/`, `runs/p1..p8/`); the mapping to real paths is held privately and
-   available to auditors on request. Project trees `p1-p8` are anonymized;
+   `codex/`, `runs/p1..p9/`); the mapping to real paths is held privately and
+   available to auditors on request. Project trees `p1-p9` are anonymized;
    framework-run names are disclosed.
 3. Evidence grades: **W** = filesystem modification time only (weak, never
    load-bearing alone). **M** = content-internal date, dated filename,
@@ -53,8 +53,39 @@ for lack of a public timestamped record. The rules it follows:
 
 ### v1 — the harness in use
 
-- The EARLIEST verifiable run — disclosed by the owner after the initial
-  sweep, in a ninth tree — is an academic-coursework run (institution,
+- REVISED 2026-07-10 (see the Revisions section): the earliest
+  content-anchored run found anywhere in the archive is a long-running
+  Rust extraction campaign in a TENTH project tree, surfaced by a
+  full-corpus re-sweep. Its plan file carries the literal line
+  "Created: 2026-05-17T23:57:46+00:00"; its execution log's first heading
+  is the same instant; its run-state file records the same instant in
+  +01:00 form (created_at_utc 2026-05-18T00:57:46+01:00 — the
+  field-name/offset mismatch belongs to the BST-mislabel erratum class
+  disclosed in the known-defects section, and the two stamps are dual
+  representations of ONE instant: 00:57:46+01:00 == 23:57:46Z). The plan
+  file's filesystem mtime, 2026-05-18T00:10Z — twelve minutes after the
+  stamp — cross-corroborates at grade W. Stated plainly: in local +01:00
+  clock the moment falls just past midnight on 2026-05-18; the UTC date is
+  2026-05-17; and under the worst-case mislabel reading (a local-time
+  value labeled UTC) the true instant is one hour EARLIER still, so the
+  claim is conservative under every reading. The harness was in use no
+  later than 2026-05-17T23:57:46Z [E: runs/p9/earliest-campaign-run
+  plan.md Created line + execution-log first heading + state.json
+  created_at_utc — three content stamps of one instant, grade M; plan.md
+  mtime +12 min, grade W corroboration]. The run's own Goal line — quoted
+  verbatim as a single owner-authorized exception to this file's
+  aggregate-only citation rule for the run archive — reads: "Long-running
+  Rust core extraction campaign on Git, starting with a read-only Git
+  index parser milestone with oracle-based validation." That phrasing
+  (long-running campaign, read-only first milestone, oracle-based
+  validation) is itself design evidence: the paradigm's working idiom,
+  recorded three weeks before the public terms this package tracks. The
+  same state file already runs schema_version 2 with plan_gate,
+  execution_gate, and audit-mode fields, and holds 215 checkpoints
+  spanning 2026-05-17 to 2026-05-23
+  [E: runs/p9/earliest-campaign-run state.json, grade M].
+- The earliest run in the NINE-TREE sweep of 2026-07-08 — disclosed by the
+  owner after that sweep, in a ninth tree — is an academic-coursework run (institution,
   module, and platform names withheld) whose state file, while marked
   completed, still lists the owner's upload before the submission deadline
   of 2026-05-26T12:00+01:00 as a REMAINING obligation: the run therefore
@@ -73,8 +104,10 @@ for lack of a public timestamped record. The rules it follows:
   deliverables and word_count_final fields, grade M]. Chained claim,
   grades stated separately: the governed run's deliverable was submitted
   2026-05-24 (S), and the run that produced it — with the full gate loop —
-  is the one recorded locally (M). The harness was therefore in use no
-  later than 2026-05-24.
+  is the one recorded locally (M). This chained S+M claim stands on its
+  own: 2026-05-24 remains the earliest EXTERNALLY-anchored (S-grade) event
+  in the record, while the earliest M-grade in-use anchor is now the
+  2026-05-17 entry above.
 - The same state file shows the FULL gate loop already operating at that
   date: independent-subagents audit mode; a plan audit that returned
   needs-replan in round 1 and pass in round 2; an execution audit that
@@ -98,7 +131,16 @@ for lack of a public timestamped record. The rules it follows:
   in the run governance-disclosure-20260708 + post-sweep disclosure,
   per-tree tables in the private inventory, grade M/W mixed]. These runs are
   ordinary engineering and academic work — the harness's operating history,
-  not demos.
+  not demos. A full-corpus re-sweep on 2026-07-10 used a WIDER counting
+  basis — every goal-run directory under every goal-runs parent on both of
+  the machine's filesystems, project trees and framework/tool trees alike,
+  including snapshot-copy duplicates and one empty orphan — and found 475
+  directories, 412 of them in the newly surfaced tenth project tree
+  (runs/p9, the tree that also holds the 2026-05-17 anchor). The 93 and
+  475 figures use different bases and are NOT directly comparable; both
+  are reported with their basis stated, per the count-drift convention in
+  the known-defects section [E: this revision's sweep, evidence table in
+  the private inventory, grade M/W mixed].
 
 ### The mid-June design record (platform-held conversation snapshots)
 
@@ -315,3 +357,42 @@ noted below for the record.)
   three numbers are reported with their as-of context rather than harmonized
   [E: claude/skill/references/source-notes.md v4/v5 entries + this run's
   sweep, grade M].
+
+## Revisions
+
+Every change committed after the Publication anchor is itself publicly
+timestamped by this repository's history; entries here summarize WHAT
+changed and on what evidence, so the record of revision is readable
+without diffing commits. Published history is never rewritten — revisions
+are new commits.
+
+- **2026-07-10 — the v1 M-grade floor moved EARLIER: 2026-05-26 →
+  2026-05-17.** A full-corpus re-sweep of every goal-run directory on the
+  owner's two filesystems (475 directories; counting basis stated in the
+  v1 corpus entry) surfaced a surviving campaign run in a previously
+  un-inventoried tenth project tree. Its plan-file Created line, its
+  execution log's first heading, and its run-state stamp all record the
+  single instant 2026-05-17T23:57:46Z, cross-corroborated by a plan-file
+  mtime twelve minutes later. The v1 section now leads with that anchor,
+  including its timezone reconciliation and worst-case reading, stated in
+  full. What did NOT change: the 2026-05-24 submission event remains the
+  earliest S-grade (externally held) anchor; no prior entry was weakened
+  or removed — every earlier date stands with its original citation and
+  grade. Consequential edits in the same commit: pseudo-path p9 added to
+  rule 2 (the tree stays anonymized); the prior "earliest verifiable run"
+  bullet re-scoped to the nine-tree 2026-07-08 sweep it came from; the
+  corpus-count entry gained an as-of-2026-07-10 sentence with its basis
+  stated. One verbatim Goal-line quote from the anchoring run enters the
+  record as a single owner-authorized exception to the aggregate-only
+  citation rule for the run archive (see DISCLOSURE-MAP, run-archive row);
+  no other run content is quoted. Why the floor moved: the original
+  2026-07-08 sweep covered the eight project trees then known plus one
+  owner-disclosed ninth; the tenth tree lives on the machine's second
+  filesystem and was found only by this sweep's
+  filesystem-wide signature search — the revision exists because the
+  sweep got wider, not because any earlier evidence changed. One
+  schema-archaeology note from the same sweep, recorded as INFERENCE
+  rather than dated claim: the 2026-05-17 run's state file already runs
+  schema_version 2, which implies a schema 1 — and the paradigm's actual
+  beginning — earlier still. This timeline stops at the edge of surviving
+  evidence, not at the paradigm's origin.
