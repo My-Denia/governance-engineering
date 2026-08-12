@@ -1,65 +1,57 @@
-# Governance engineering
+简体中文 | [English](README.en.md)
 
-Harness engineering equips a run; loop engineering drives runs; governance
-engineering is what keeps the loops honest: state authority, say/do
-reconciliation, and rule lifecycle.
+# Governance engineering(治理工程)
 
-This repository is a disclosure package for governance engineering as a
-built system — an execution-governance layer for autonomous LLM agents,
-built and used in private between May and July 2026. It documents the design thinking (essays/), the mechanism
-specifications (specs/), and a verifiable development chronology
-(CHRONOLOGY.md). Implementation code is deliberately withheld
-(DISCLOSURE-MAP.md explains the tiering).
+Harness engineering 装备一次运行;loop engineering 驱动多次运行;
+governance engineering 让这些循环保持诚实:状态权威、言行对账、规则生命周期。
 
-## The problem layer
+本仓库是 governance engineering 作为一套已建成系统的披露包——一个面向自主
+LLM agent 的执行治理层,于 2026 年 5 月至 7 月间私下构建并实际使用。它记录
+了设计思考(essays/)、机制规格(specs/)与一份可核验的开发年表
+(CHRONOLOGY.md)。实现代码有意不予公开(分级方式见 DISCLOSURE-MAP.md)。
 
-Prompt engineering shaped what a model is asked. Context engineering shaped
-what it knows while answering. Harness engineering shaped the machinery an
-agent acts through. Loop engineering shaped how long-running work continues
-across turns. Above all of these sits an unshaped layer: **what makes an
-autonomous run trustworthy** — not whether the agent CAN do the work, but
-whether what it claims about the work is true, whether its plan survived
-contact with reality, and whether the rules governing it are themselves
-governed.
+## 问题层次
 
-This package documents one worked answer, built as a running system rather
-than a proposal:
+Prompt engineering 塑造了模型被问到什么。Context engineering 塑造了它在作
+答时知道什么。Harness engineering 塑造了 agent 借以行动的机械。Loop
+engineering 塑造了长时间运行的工作如何跨轮次延续。在这一切之上,还有一个
+尚未被塑造的层次:**自主运行凭什么可信**——不是 agent 能不能完成这项工
+作,而是它对这项工作的陈述是否为真、它的计划是否经受住了与现实的接触,
+以及治理它的那些规则本身是否也受治理。
 
-- **Two blocking audit gates** — a plan is audited by an isolated-context
-  auditor before execution; execution is audited before "done" is allowed
-  (specs/gates.md). Enforced at runtime by hooks, not by asking nicely.
-- **Say-do reconciliation** — six machine checks that diff what the run's
-  state CLAIMS against what its artifacts SHOW (specs/say-do-checks.md).
-- **A four-cell deviation taxonomy** — every checkpoint can classify what
-  the plan met: on-plan, detour, grind, or escalate — classified by the
-  response the deviation licenses (specs/four-cell-taxonomy.md).
-- **Evidence-graded state** — claims carry their anchor quality (weak /
-  medium / strong); completion requires medium or better
-  (specs/run-state.md).
-- **A self-taxing rule lifecycle** — every rule and mechanism must pay
-  rent; promotion needs an owner's tick, doubtful machinery goes on
-  probation, dead rules get retired (specs/rule-lifecycle.md).
+本包记录了一个做出来的答案——它是作为一套运行中的系统建成的,而不是一份
+提案:
 
-## Why the chronology is the way it is
+- **两道阻塞式审计门**——计划在执行前由一个隔离上下文的审计者审核;执行
+  在被允许标记为“完成”之前先接受审计(specs/gates.md)。由运行时钩子强制
+  执行,而不是靠口头约定。
+- **言行对账**——六项机器检查,比对运行状态所声称的与其工件所显示的
+  (specs/say-do-checks.md)。
+- **四格偏差分类法**——每个检查点都可以对计划遭遇了什么作出分类:按计划
+  (on-plan)、绕行(detour)、硬啃(grind)或上报(escalate)——分类依据
+  是该偏差许可何种响应(specs/four-cell-taxonomy.md)。
+- **证据分级状态**——主张携带其锚点质量(弱/中/强);收工需要中级或更好
+  的证据(specs/run-state.md)。
+- **自征税的规则生命周期**——每条规则与机制都必须付租;晋级需要 owner 打
+  勾,存疑的机器进入缓刑,死掉的规则被退休(specs/rule-lifecycle.md)。
 
-The package's value rests entirely on claim credibility, so CHRONOLOGY.md
-holds itself to an uncomfortable standard: every date is "existed no later
-than", every claim carries a graded citation, each anchor's grade is
-stated where it is used (four claims carry externally held S-grade
-anchors; everything else is local evidence, and says so), and claims that
-only the owner can attest are quarantined in their own section.
-NEEDS-OWNER.md lists the evidence that would upgrade the rest.
+## 年表为什么是这个样子
 
-## Licensing
+本包的价值完全取决于其主张的可信度,因此 CHRONOLOGY.md 给自己定下了一个并
+不舒服的标准:每个日期都是“不晚于某日”的表述,每条主张都携带分级引用,每
+个锚点的等级都在其被使用之处标明(四条主张携带外部持有的 S 级锚点;其余均
+为本地证据,并且如实标注),而只有 owner 才能作证的主张被隔离在专门的一节
+里。NEEDS-OWNER.md 列出了能把其余部分升级的证据。
 
-Prose (essays, chronology, specs, this README): CC BY-SA 4.0 — see
-[docs/LICENSE-DOCS.md](docs/LICENSE-DOCS.md). Code and skill files (none
-staged at initial publication; implementation is withheld per
-[DISCLOSURE-MAP.md](DISCLOSURE-MAP.md)): AGPL-3.0-or-later — see
-[LICENSE](LICENSE).
+## 许可
 
-## Status
+文稿部分(essays、年表、specs、本 README):CC BY-SA 4.0——见
+[docs/LICENSE-DOCS.md](docs/LICENSE-DOCS.md)。代码与技能文件(首次发布时
+两者均未收录;实现层按 [DISCLOSURE-MAP.md](DISCLOSURE-MAP.md) 扣留):
+AGPL-3.0-or-later——见 [LICENSE](LICENSE)。
 
-The name (governance engineering) and licenses are settled owner rulings;
-any release of withheld implementation remains a per-item owner decision.
-Contributions are not being accepted until after first publication.
+## 状态
+
+名称(governance engineering)与许可证均为已定的 owner 裁决;扣留的实现层
+如需公开,仍为逐项 owner 决定。首次发布已经发生(release v1.0,
+2026-07-08;见 CHRONOLOGY.md)。本仓库尚未记载发布之后的贡献政策。
