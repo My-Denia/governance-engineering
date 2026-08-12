@@ -10,6 +10,7 @@ repository; specs are abstract rewrites, not copies.
 | artifact | tier | evidence grade | recommendation | rationale |
 |---|---|---|---|---|
 | README.md | 1 | — | publish | orientation, no sensitive content |
+| README.en.md | 1 | — | publish | English counterpart of the bilingual README pair |
 | CHRONOLOGY.md | 1 | M (self-describing) | publish | the attribution record itself |
 | NEEDS-OWNER.md | 1 | — | publish | shows the evidence discipline openly |
 | NAMING.md | 1 | — | publish | dated collision scan, preserved unchanged as the record of a deliberate naming choice |
